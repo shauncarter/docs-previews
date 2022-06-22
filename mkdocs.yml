@@ -1,0 +1,17 @@
+site_name: Matillion Docs
+nav:
+  - Home: 'index.md'
+  - Release notes:
+      - 'Matillion ETL 1.64': '164-patch-notes.md'
+  - Destinations:
+      - 'Snowflake': 'connect-to-snowflake.md'
+      - 'BigQuery':
+        - 'Set up BigQuery': 'set-up-google-bigquery.md'
+        - 'Connect to BigQuery': 'connect-to-bigquery.md'
+  - Pipelines:
+    - 'MySQL': 'mysql.md'
+  - Previews:
+    - 'Test': 'test.md'
+theme: 
+extra_css:
+  - stylesheets/extra.css
