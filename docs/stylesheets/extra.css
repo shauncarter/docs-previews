@@ -52,3 +52,12 @@ code {
     margin: 3px 3px;
     padding: 5px 5px;
 }
+
+ol li {
+    left: 0;
+    color: black;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 50%;
+    background-color: green;
+}
