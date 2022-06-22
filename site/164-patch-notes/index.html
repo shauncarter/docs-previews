@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Matillion ETL 1.64 - Matillion Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Matillion Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Release notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Matillion ETL 1.64</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Destinations <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../connect-to-snowflake/" class="dropdown-item">Snowflake</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">BigQuery</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="../set-up-google-bigquery/" class="dropdown-item">Set up BigQuery</a>
+</li>
+            
+<li>
+    <a href="../connect-to-bigquery/" class="dropdown-item">Connect to BigQuery</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pipelines <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../mysql/" class="dropdown-item">MySQL</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Previews <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../test/" class="dropdown-item">Test</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../connect-to-snowflake/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#matillion-etl-version-1647-major-release" class="nav-link">Matillion ETL version 1.64.7 (major release)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="overview">Overview</h2>
+<p>Below, you can find release notes for Matillion ETL version 1.64.x</p>
+<hr />
+<h2 id="matillion-etl-version-1647-major-release">Matillion ETL version 1.64.7 (major release)</h2>
+<p>June 21, 2022</p>
+<h3 id="tech-notes">Tech notes</h3>
+<ul>
+<li><a href="tech-note-shopify-query-versioning-164">Tech note - Shopify Query versioning</a></li>
+<li><a href="tech-note-splunk-query-versioning-164">Tech note - Splunk Query versioning</a></li>
+</ul>
+<hr />
+<h3 id="new-features-and-improvements">New features and improvements</h3>
+<h4 id="all-platforms">All platforms</h4>
+<ul>
+<li>Versioned the <a href="/docs/2950308">Shopify Query</a> component (deprecated the component and replaced with a new version of Shopify Query component).</li>
+<li>Versioned the <a href="/docs/2970256">Splunk Query</a> component (deprecated the component and replaced it with a new version of the Splunk Query component).</li>
+<li>Updated the <a href="/docs/2887499">Gmail Query</a> component to include a new parameter, <strong>Data Schema</strong>. Users can set this to either <code>IMAP</code> or <code>REST</code>.</li>
+<li>Updated the <a href="/docs/1991925">Calculator</a> component to include a grid variable dialog as an alternative to the expression editor.</li>
+<li>Updated <a href="/docs/2103629">Manage Schedules</a> dialog. When you click into a schedule's <strong>Task Info</strong>, a separate <strong>Task Info</strong> dialog opens. Click <strong>OK</strong> to close this <strong>Task Info</strong> dialog and return to <strong>Manage Schedules</strong>.</li>
+<li>NULL values in Matillion ETL now display as italicized, capitalized, and with a grey text color (#757575). This change is to avoid confusion where a non-NULL value is Null. For example, if a person's surname is literally Null, for example, Jane Null or Tom Null.</li>
+<li>Updated <a href="/docs/2477766">Zero Copy Clone</a> in the following ways: <ul>
+<li>Added <strong>Run job in clone</strong> functionality. You can run any transformation or orchestration job using a cloned database. This lets you to test the job on data that mirrors that in your production environment, without affecting your production data. </li>
+<li>Improved error messages in the <strong>clone environment and database</strong> dialog.</li>
+</ul>
+</li>
+<li>New <a href="/docs/5971755#shared-jobs">Shared Job Git API endpoints</a> are available including:<ul>
+<li>Switch commit</li>
+<li>Delete branch</li>
+<li>Get state (logs)</li>
+<li>Create branch (on current commit)</li>
+<li>Get remote (URL)</li>
+</ul>
+</li>
+<li>The <strong>Payload</strong> field in <strong>Manage Error Reporting</strong> is no longer editable when using a payload template that isn't <code>[Custom]</code>. These payloads are now read-only. Use <strong>Manage Webhook Payloads</strong> to edit payloads.</li>
+</ul>
+<h4 id="redshift">Redshift</h4>
+<p>The Avro file format is now available for the following components for Matillion ETL for Redshift:</p>
+<ul>
+<li><a href="/docs/2827024">Create External Table</a></li>
+<li><a href="/docs/2842286">External Table Output</a></li>
+<li><a href="/docs/2827049">Rewrite External Table</a></li>
+</ul>
+<hr />
+<h3 id="deprecation">Deprecation</h3>
+<h4 id="all-platforms_1">All platforms</h4>
+<ul>
+<li>The Google AdWords Query component is now disabled. This component was deprecated in version 1.62.7.</li>
+</ul>
+<hr />
+<h3 id="bug-fixes">Bug fixes</h3>
+<h4 id="all-platforms_2">All platforms</h4>
+<ul>
+<li>Fixed an issue where maliciously altered exported jobs could be used for a Cross-Site Scripting (XSS) attack on import.</li>
+<li>Fixed an issue to make sure that Excel Query components running in iterators are consistently associated with their files.</li>
+<li>Updated Snowflake JDBC driver to latest version (3.13.18). This corrects a proxy regression, among other improvements.</li>
+<li>Fixed an issue where the API Extract component and Manage Extract Profiles wizard didn't pass a correct bearer token when <code>Authentication Type = Bearer Token</code>.</li>
+<li>Fixed an issue where additional parameters didn't pass in the request to get the Access Token when configuring an API OAuth, when Grant Type = Client Credentials.</li>
+</ul>
+<h4 id="redshift-synapse">Redshift, Synapse</h4>
+<ul>
+<li>Fixed an issue where the Create External Table component parameter Table Metadata didn't open successfully when the value of the data type in the dialog was <code>NULL</code>.</li>
+</ul>
+<h4 id="delta-lake-on-databricks">Delta Lake on Databricks</h4>
+<ul>
+<li>Fixed an issue where row counts were reported as <code>0</code> when Query components had executed despite the actual number of staged rows displaying correctly during job execution.</li>
+<li>Fixed an issue where certain components would not present metadata in the correct casing when using aliasing on columns.</li>
+</ul>
+<hr />
+<h3 id="driver-updates">Driver updates</h3>
+<ul>
+<li>Bing Search API driver updated. 20.0.7662.0 → 21.0.8152.0</li>
+<li>Dynamics 365 API driver updated. 19.0.7156.0 → 21.0.8137.0</li>
+<li>Elasticsearch API driver updated. 20.0.7662.0 → 21.0.8137.0</li>
+<li>Email API driver updated. 19.0.7354.0 → 21.0.8137.0</li>
+<li>Excel API driver updated. 21.0.7829.0 → 21.0.8137.0</li>
+<li>HubSpot API driver updated. 21.0.7907.0 → 21.0.8130.0</li>
+<li>Google BigQuery API driver updated. 21.0.7930.0 → 21.0.8152.0</li>
+<li>LDAP API driver updated. 15.0.6121.0 → 21.0.8137.0</li>
+<li>Sage Intacct API driver updated. 19.0.7121.0 → 21.0.8137.0</li>
+<li>ServiceNow API driver updated. 21.0.7930.0 → 21.0.8137.0</li>
+<li>Shopify API driver updated. 19.0.7485.0 → 21.0.8137.0</li>
+<li>Splunk API driver updated. 19.0.7216.0 → 21.0.8137.0</li>
+<li>Square API driver updated. 21.0.7867.0 → 21.0.8137.0</li>
+<li>SurveyMonkey API driver updated. 20.0.7662.0 → 21.0.8137.0</li>
+<li>YouTube Analytics API driver updated. 20.0.7628.0 → 21.0.8137.0</li>
+<li>Zoho CRM API driver updated. 20.0.7662.0 → 21.0.8137.0</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
