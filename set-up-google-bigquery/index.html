@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Set up BigQuery - Matillion Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+        <link href="../stylesheets/extra.css" rel="stylesheet">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Matillion Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Release notes <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../164-patch-notes/" class="dropdown-item">Matillion ETL 1.64</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Destinations <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../connect-to-snowflake/" class="dropdown-item">Snowflake</a>
+</li>
+                                    
+  <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">BigQuery</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="./" class="dropdown-item active">Set up BigQuery</a>
+</li>
+            
+<li>
+    <a href="../connect-to-bigquery/" class="dropdown-item">Connect to BigQuery</a>
+</li>
+    </ul>
+  </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pipelines <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../mysql/" class="dropdown-item">MySQL</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Previews <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../test/" class="dropdown-item">Test</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../connect-to-snowflake/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../connect-to-bigquery/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="2"><a href="#overview" class="nav-link">Overview</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#prerequisites" class="nav-link">Prerequisites</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#enable-the-gcp-project-api" class="nav-link">Enable the GCP project API</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#create-a-bigquery-dataset" class="nav-link">Create a BigQuery dataset</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#creating-service-accounts" class="nav-link">Creating Service Accounts</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#add-roles-to-a-service-account" class="nav-link">Add roles to a service account</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#link-a-service-account-to-a-cloud-billing-account" class="nav-link">Link a service account to a Cloud Billing account</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#access-keys" class="nav-link">Access keys</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="2"><a href="#cloud-storage-bucket" class="nav-link">Cloud Storage bucket</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="overview">Overview</h2>
+<p>This page is a guide to setting up your Google Cloud Platform (GCP) account to use <a href="https://cloud.google.com/bigquery/docs/introduction#get-started-with-bigquery">Google BigQuery</a> as a destination within Matillion Data Loader.</p>
+<hr />
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li>For security purposes, you may wish to set up a new Google Cloud Platform (GCP) account and project for use with Matillion Data Loader.</li>
+<li>Make sure you have access to a GCP project. You need permissions in the GCP project to create <a href="https://cloud.google.com/iam/docs/overview">Identity Access Management (IAM)</a> services accounts.</li>
+<li>Make sure you have access to a Google Cloud Platform project within Google BigQuery.</li>
+<li>You need to connect to an IAM service account that has access to BigQuery, Cloud Storage, and your project.</li>
+<li>You need permissions to create a Cloud Storage bucket and a BigQuery dataset.</li>
+<li>You need administrative permission to a Matillion ETL for BigQuery instance that has billing enabled. It's recommended to have billing enabled while performing data loading processes even if you're using the free trial option.</li>
+</ul>
+<hr />
+<h2 id="enable-the-gcp-project-api">Enable the GCP project API</h2>
+<p>If you have sufficient access to enable the API, follow the steps below to enable the API in your own Google Cloud project:</p>
+<ol>
+<li>Navigate to <a href="https://console.cloud.google.com/apis">APIs &amp; Services</a> in the Google Cloud console.</li>
+<li>Click <strong>Library</strong> → <strong>Private</strong>. If you don't see an API listed, you don't have access to enable it.</li>
+<li>Click the API you want to enable. Use the search field to filter out unwanted objects.</li>
+<li>Enable the following APIs:<ul>
+<li>BigQuery API</li>
+<li>Cloud Key Management Service (KMS) API (optional)</li>
+<li>Cloud Pub Sub API (optional)</li>
+<li>Cloud Resource Manager API</li>
+<li>Cloud Storage API</li>
+<li>Google Sheets API (if you want to use a Google Sheets data source).</li>
+</ul>
+</li>
+<li>In the page that displays information about the API, click <strong>Enable</strong>.</li>
+</ol>
+<hr />
+<h2 id="create-a-bigquery-dataset">Create a BigQuery dataset</h2>
+<p>To create a dataset:</p>
+<ol>
+<li>Navigate to <a href="https://console.cloud.google.com/bigquery">Google BigQuery</a>.</li>
+<li>In the <strong>Explorer</strong> panel, select the more button (three vertical dots) on your project and click <strong>Create data set</strong>.</li>
+<li>Name the dataset in the <strong>Data set ID</strong> field.</li>
+<li>Set a <a href="https://cloud.google.com/bigquery/docs/locations?_ga=2.169100577.-1068399664.1643908482">dataset location</a>. You can't change the dataset location once set.</li>
+<li>Select <strong>Enable table expiry</strong> if you wish to set a maximum age of a table in days.</li>
+<li>Click <strong>Create DATA SET</strong>.</li>
+</ol>
+<p>You can now choose this data set in the dropdown list within the project, and the Dataset ID can be used in Matillion ETL and Data Loader.</p>
+<hr />
+<h2 id="creating-service-accounts">Creating Service Accounts</h2>
+<p>Matillion Data Loader requires you to set up an existing GCP project with Google BigQuery and GCP authentication. Authentication is achieved via service accounts in Google—an account within your GCP project used by virtual machines (VMs). A service account has assigned roles and permissions, and access keys.</p>
+<p>To create a service account:</p>
+<ol>
+<li>Make sure you have the BigQuery API enabled.</li>
+<li>Navigate to <a href="https://console.cloud.google.com/iam-admin/serviceaccounts">IAM &amp; Admin: Service Accounts</a> in the Google Cloud console.</li>
+<li>Click <strong>+ Create service account</strong></li>
+<li>Enter a service account name to display in the Google Cloud console.</li>
+<li>The Google Cloud console generates a service account ID based on this name. Edit the ID if necessary. You can't change the ID later.</li>
+<li>Optional: Enter a description of the service account.</li>
+<li>Click <strong>Continue</strong> to progress to part 2, <strong>Grant this service account access to the project (optional)</strong>.</li>
+<li>Optional: Choose one or more IAM roles to grant to the service account on the project.</li>
+<li>Click <strong>Continue</strong> to progress to part 3, <strong>Grant users access to this service account (optional)</strong>.</li>
+<li>Optional: In the <strong>Service account users role</strong> field, add members that can impersonate the service account.</li>
+<li>Optional: In the <strong>Service account admins role</strong> field, add members that can manage the service account.</li>
+<li>Click <strong>Done</strong> to create the service account. </li>
+</ol>
+<p>Locate your new service account in <strong>Service accounts</strong>.</p>
+<hr />
+<h2 id="add-roles-to-a-service-account">Add roles to a service account</h2>
+<ol>
+<li>Navigate to <a href="https://console.cloud.google.com/iam-admin">IAM &amp; Admin: IAM</a> in the Google Cloud console.</li>
+<li>Click the current project, and then click <strong>Open</strong>.</li>
+<li>In the <strong>Permission</strong> tab, locate your service account (Principal) and click the edit button (pencil).</li>
+<li>Add a role.</li>
+<li>Click <strong>+ ADD ANOTHER ROLE</strong> if applicable.</li>
+<li>Click <strong>SAVE</strong>.</li>
+</ol>
+<p>Ensure these roles are present:</p>
+<ul>
+<li>BigQuery Admin</li>
+<li>Project Viewer</li>
+<li>Storage Admin</li>
+</ul>
+<hr />
+<h2 id="link-a-service-account-to-a-cloud-billing-account">Link a service account to a Cloud Billing account</h2>
+<p>Your GCP project must have billing enabled. You must define a <a href="https://cloud.google.com/billing/docs/concepts">Cloud Billing account</a> outside a project and then you must apply the Cloud Billing account to a project at your discretion. </p>
+<ol>
+<li>Navigate to <a href="https://console.cloud.google.com/billing">Billing</a> in the Google Cloud console.</li>
+<li>Select a Cloud Billing account for your chosen project in the list.</li>
+<li>To learn more about changing a Cloud Billing account for projects, read <a href="https://cloud.google.com/billing/docs/how-to/modify-project">_Enable, disable, or change billing for a project _</a>.</li>
+<li>To learn how to create a Cloud Billing account, <a href="https://cloud.google.com/billing/docs/how-to/manage-billing-account">_Create, modify, or close your self-serve Cloud Billing account _</a>.</li>
+</ol>
+<hr />
+<h2 id="access-keys">Access keys</h2>
+<p>Service accounts use keys to access services. You need a key to configure your Matillion ETL and Data Loader instances.</p>
+<p>The access key format is below:</p>
+<pre><code class="language-JSON">{
+ &quot;type&quot;: &quot;service_account&quot;,
+ &quot;project_id&quot;: &quot;abcde&quot;,
+ &quot;private_key_id&quot;: &quot;&quot;,
+ &quot;private_key&quot;: &quot;&quot;,
+ &quot;client_email&quot;: &quot;abcde@appspot.gserviceaccount.com&quot;,
+ &quot;client_id&quot;: &quot;XXXXXXXXXXXXX&quot;,
+ &quot;auth_uri&quot;: &quot;https://accounts.google.com/o/oauth2/auth&quot;,
+ &quot;token_uri&quot;: &quot;https://accounts.google.com/o/oauth2/token&quot;,
+ &quot;auth_provider_x509_cert_url&quot;: &quot;https://www.googleapis.com/oauth2/v1/certs&quot;,
+ &quot;client_x509_cert_url&quot;: &quot;https://www.googleapis.com/robot/v1/metadata/x509/abcde%40appspot.gserviceaccount.com&quot;
+}
+</code></pre>
+<p>To add an access key in GCP:</p>
+<ol>
+<li>Navigate to <a href="https://console.cloud.google.com/iam-admin/serviceaccounts">IAM &amp; Admin: Service Accounts</a> in the Google Cloud console.</li>
+<li>Locate your service account and in the <strong>Actions</strong> column, click the more button (three vertical dots).</li>
+<li>Click <strong>Manage keys</strong></li>
+<li>Click <strong>ADD KEY</strong> → <strong>Create new key</strong> → set the radio button to <strong>JSON</strong> and click <strong>CREATE</strong>.</li>
+<li>Your browser begins the downloading of the key to your computer.</li>
+</ol>
+<hr />
+<h2 id="cloud-storage-bucket">Cloud Storage bucket</h2>
+<p>To create a new Cloud Storage bucket:</p>
+<ol>
+<li>Log in to the <a href="https://console.cloud.google.com/storage/">Google Cloud console</a> at the Cloud Storage product.</li>
+<li>Click <strong>CREATE BUCKET</strong></li>
+<li>Read Google's <a href="https://cloud.google.com/storage/docs/creating-buckets"><em>Create storage buckets</em></a> to learn how to set up your new bucket.</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
