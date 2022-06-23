@@ -12,6 +12,16 @@ nav:
     - 'MySQL': 'mysql.md'
   - Previews:
     - 'Test': 'test.md'
+
 theme: 
+  name: 'material'
+  palette:
+    scheme: default
+    primary: green
+    accent: blue
+
+plugins:
+  - search
+
 extra_css:
   - stylesheets/extra.css
