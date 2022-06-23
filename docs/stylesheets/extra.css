@@ -2,6 +2,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root > * {
+    --md-primary-fg-color:        #51A620;
+  }
+  
+
 h1 {
     color: #51A620;
 }
@@ -93,3 +98,4 @@ ol > li:before {
 li ol,
 li ul {margin-top:6px;}
 ol ol li:last-child {margin-bottom:0;}
+
