@@ -32,6 +32,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon.ico
+  logo: assets/white-logo.svg
   features:
     - navigation.expand 
     - navigation.instant
@@ -49,6 +50,11 @@ extra_javascript:
   - javascripts/shortcuts.js
 
 copyright: Copyright &copy; 2022 - Matillion
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 
 extra:

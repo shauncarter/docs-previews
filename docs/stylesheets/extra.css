@@ -37,7 +37,7 @@ a:hover {
 code {
     background-color: #f2f2f2;
     border-radius: 5px;
-    color: #C1778B;
+    color: #C1778B !important;
     display: inline;
     font-size: 1rem;
     font-weight: 400;
@@ -46,6 +46,7 @@ code {
 }
 
 pre {
+    border-radius: 12px;
     padding: 10px 0;
 }
 
