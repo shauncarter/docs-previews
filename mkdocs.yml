@@ -32,9 +32,18 @@ theme:
     text: Roboto
     code: Roboto Mono
   favicon: assets/favicon.ico
+  features:
+    - navigation.expand 
+    - navigation.instant
+    - navigation.prune
+    - navigation.top
+    - navigation.tracking
 
 plugins:
   - search
 
 extra_css:
   - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/shortcuts.js
