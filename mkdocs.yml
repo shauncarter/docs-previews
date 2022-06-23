@@ -47,3 +47,9 @@ extra_css:
 
 extra_javascript:
   - javascripts/shortcuts.js
+
+copyright: Copyright &copy; 2022 - Matillion
+
+
+extra:
+  generator: false
