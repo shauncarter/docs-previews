@@ -16,9 +16,22 @@ nav:
 theme: 
   name: 'material'
   palette:
-    scheme: default
-    primary: green
-    accent: blue
+    - scheme: default
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
 
 plugins:
   - search
