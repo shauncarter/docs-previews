@@ -3,16 +3,11 @@ body {
 }
 
 :root > * {
-    --md-primary-fg-color:        #51A620;
+    --md-primary-fg-color:        #222222;
   }
-  
-
-h1 {
-    color: #51A620;
-}
 
 h2 {
-    color: #51A620;
+    color: #081D4C;
     padding-bottom: 10px;
 }
 
@@ -28,13 +23,13 @@ table {
 
 
 a {
-    color: #51A620;
+    color: #366FE5 !important;
     font-weight: 500;
     text-decoration: none;
 }
 
 a:hover {
-    color: #51A620;
+    color: #366FE5;
     font-weight: 400;
     text-decoration: underline;
 }
