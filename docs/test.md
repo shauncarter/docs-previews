@@ -11,3 +11,18 @@ Hello, this is just a test page.
 print("Hello there.")
 
 ```
+
+=== "Snowflake"
+
+    |Property|Description|
+    |---|---|
+    |Name|A human-readable name for the component.|
+    |Warehouse|Select a Snowflake warehouse.|
+
+=== "Redshift"
+
+    |Property|Description|
+    |---|---|
+    |Name|A human-readable name for the component.|
+    |Schema|Select a Redshift schema.|
+

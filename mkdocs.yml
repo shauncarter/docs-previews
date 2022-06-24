@@ -12,6 +12,9 @@ nav:
     - 'MySQL': 'mysql.md'
   - Previews:
     - 'Test': 'test.md'
+  - Resources:
+    - 'Resources': 'resources.md'
+
 
 theme: 
   name: 'material'
@@ -34,9 +37,11 @@ theme:
   favicon: assets/favicon.ico
   logo: assets/white-logo.svg
   features:
+    - content.tabs.link
     - navigation.expand 
     - navigation.instant
     - navigation.prune
+    - navigation.tabs
     - navigation.top
     - navigation.tracking
 
@@ -55,6 +60,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
 
 
 extra:

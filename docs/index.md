@@ -16,7 +16,16 @@ Stylistically, the site is a work-in-progress right now. But it deploys markdown
 
     This site is a work-in-progress, and should be considered pre-alpha at best.
 
-??? Note
+???+ Note
 
     You can collapse this note if you think it's not worth reading.
     Likely you already read it, though...
+
+
+!!! Tip
+
+    This is a tip.
+
+!!! Bug
+
+    Uh oh, there's a creepy crawly lurking.
