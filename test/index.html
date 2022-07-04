@@ -657,14 +657,36 @@
 
 <p>Hello, this is just a test page.</p>
 <ol>
-<li>My</li>
-<li>Name</li>
-<li>Is</li>
-<li>Shaun</li>
+<li>Open Visual Studio Code.</li>
+<li>Create a file with the extension <code>.swift</code></li>
+<li>Run the following code:</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello there.&quot;</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kd">var</span> <span class="nv">gemCounter</span> <span class="p">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="n">gemCounter</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="p">{</span>
+    <span class="n">moveForward</span><span class="p">()</span>
+    <span class="k">if</span> <span class="o">!</span><span class="n">isBlockedRight</span> <span class="p">{</span>
+        <span class="n">turnRight</span><span class="p">()</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="n">isBlocked</span> <span class="o">&amp;&amp;</span> <span class="n">isBlockedRight</span> <span class="p">{</span>
+        <span class="n">turnLeft</span><span class="p">()</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="n">isBlocked</span> <span class="o">&amp;&amp;</span> <span class="n">isBlockedRight</span> <span class="o">&amp;&amp;</span> <span class="n">isBlockedLeft</span> <span class="p">{</span>
+        <span class="n">turnLeft</span><span class="p">()</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="n">isBlocked</span> <span class="o">&amp;&amp;</span> <span class="n">isBlockedRight</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">isBlockedLeft</span> <span class="p">{</span>
+        <span class="n">turnLeft</span><span class="p">()</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="n">isOnGem</span> <span class="p">{</span>
+        <span class="n">collectGem</span><span class="p">()</span>
+        <span class="n">gemCounter</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Snowflake</label><label for="__tabbed_1_2">Redshift</label></div>
+<ol>
+<li>Now, what was the name of the variable above?</li>
+</ol>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Snowflake</label><label for="__tabbed_1_2">Redshift</label><label for="__tabbed_1_3">BigQuery</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <table>
@@ -702,6 +724,26 @@
 <tr>
 <td>Schema</td>
 <td>Select a Redshift schema.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="tabbed-block">
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>A human-readable name for the component.</td>
+</tr>
+<tr>
+<td>Dataset</td>
+<td>Select a BigQuery dataset.</td>
 </tr>
 </tbody>
 </table>
