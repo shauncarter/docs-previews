@@ -60,11 +60,12 @@ ol {
 }
 
 ol > li {
-    position:relative; /* Create a positioning context */
+    border-top:2px solid #666;
+    font-size: 1em !important;
+    list-style:none; /* Disable the normal item numbering */
     margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
     padding:4px 8px; /* Add some spacing around the content */
-    list-style:none; /* Disable the normal item numbering */
-    font-size: 1em !important;
+    position:relative; /* Create a positioning context */
 }
 
 ol > li:before {
