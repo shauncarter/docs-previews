@@ -1,23 +1,15 @@
 site_name: Matillion Docs
 nav:
   - Home: 'index.md'
-  - Release notes:
-      - 'Matillion ETL 1.64': '164-patch-notes.md'
-  - Destinations:
-      - 'Snowflake': 'connect-to-snowflake.md'
-      - 'BigQuery':
-        - 'Set up BigQuery': 'set-up-google-bigquery.md'
-        - 'Connect to BigQuery': 'connect-to-bigquery.md'
-  - Pipelines:
-    - 'MongoDB': 'mongodb.md'
-    - 'MySQL': 'mysql.md'
-  - Manage Functions:
-    - 'Manage SQS Configuration': 'manage-sqs-configuration.md'
-  - Previews:
-    - 'Test': 'test.md'
-  - Resources:
-    - 'Resources': 'resources.md'
-
+  - Matillion Data Loader:
+    - What is Matillion Data Loader?: data-loader/index.md
+    - Getting support: data-loader/getting-support.md
+    - Batch sources:
+      - MongoDB: data-loader/mongodb.md
+  - Matillion ETL:
+    - What is Matillion ETL?: etl/index.md
+    - Project Menu:
+      - Switch Project: etl/switch-project.md
 
 theme: 
   name: 'material'

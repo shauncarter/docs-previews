@@ -13,7 +13,7 @@
     
     
       
-        <title>Connect to bigquery - Matillion Docs</title>
+        <title>Matillion data loader - Matillion Docs</title>
       
     
     
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Connect to bigquery
+              Matillion data loader
             
           </span>
         </div>
@@ -502,27 +502,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connect-to-google-bigquery" class="md-nav__link">
-    Connect to Google BigQuery
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-google-bigquery" class="md-nav__link">
-    Configure Google BigQuery
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -537,82 +516,46 @@
                 
 
 
-  <h1>Connect to bigquery</h1>
+  <h1>Matillion data loader</h1>
 
 <h2 id="overview">Overview</h2>
-<p>Connect to Google BigQuery via Matillion Data Loader and use it as your destination for batch-loading a pipeline.</p>
-<hr />
-<h2 id="prerequisites">Prerequisites</h2>
-<p>Read <a href="/mdl/docs/set-up-google-bigquery"><em>Set up Google BigQuery</em></a> to make sure you are ready to connect to your Google BigQuery destination.</p>
-<hr />
-<h2 id="connect-to-google-bigquery">Connect to Google BigQuery</h2>
-<p>Click <strong>Add GCP credential</strong> to add a new set of credentials to connect to Google Cloud Platform (GCP).</p>
+<p>Welcome to the Matillion Data Loader documentation site where we hope you can find answers to your questions and problems as well as discovering new things that will enhance your ETL journey.</p>
+<p>If you are looking for ticketed support for a Matillion ETL issue, please visit the <a href="https://support.matillion.com/s/">Matillion Support Portal</a>{:target="_blank"} or see our <a href="/mdl/docs/getting-support">Getting Support</a>{:target="_blank"} information.</p>
+<p>If you are still using Matillion Data Loader v1.x, please refer to the <a href="https://dlcommunity.matillion.com/s/documentation">Matillion Data Loader v1 documentation site</a>{:target="_blank"}.</p>
 <table>
 <thead>
 <tr>
-<th>Property</th>
+<th>Category</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>GCP credential label</td>
-<td>A name for the new GCP credentials.</td>
+<td><a href="/mdl/docs/2342968">Data Loader Overview</a>{:target="_blank"}</td>
+<td>An introduction to the functions and concepts required to use Matillion Data Loader.</td>
 </tr>
 <tr>
-<td>Access key ID</td>
-<td>A JSON file with a working GCP access key. Drag the JSON file into the box, or click anywhere in the box to upload.</td>
+<td><a href="/mdl/docs/3115423">Administration</a>{:target="_blank"}</td>
+<td>Extended information aimed at users administering Matillion Data Loader for themselves or their organization.</td>
+</tr>
+<tr>
+<td><a href="/mdl/docs/31276">Deploying CDC Agents</a>{:target="_blank"}</td>
+<td>Detailed information on CDC agent installation which is a requirement of CDC pipelines.</td>
+</tr>
+<tr>
+<td><a href="/mdl/docs/3111542">Sources</a>{:target="_blank"}</td>
+<td>Configuration information for all Batch and CDC pipeline sources.</td>
+</tr>
+<tr>
+<td><a href="/mdl/docs/3165278">Destinations</a>{:target="_blank"}</td>
+<td>How to connect to supported Destinations for Batch and CDC pipelines.</td>
+</tr>
+<tr>
+<td><a href="/mdl/docs/3165278">Troubleshooting</a>{:target="_blank"}</td>
+<td>Information on common issues in using CDC pipelines.</td>
 </tr>
 </tbody>
 </table>
-<p>Click <strong>Test and save</strong> to confirm the credentials work, save them, and return to <strong>Connect to Google BigQuery</strong>.</p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GCP credential</td>
-<td>A working Google Cloud Platform credential.</td>
-</tr>
-<tr>
-<td>Destination label</td>
-<td>A descriptive name for the Google BigQuery destination.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="configure-google-bigquery">Configure Google BigQuery</h2>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Project</td>
-<td>A working Google Cloud project. To learn more, read <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects"><em>Creating and managing projects</em></a>.</td>
-</tr>
-<tr>
-<td>Dataset</td>
-<td>Datasets are top-level containers stored within projects for organizing and controlling access to your tables and views. To learn more, <a href="https://cloud.google.com/bigquery/docs/datasets-intro"><em>Introduction to datasets</em></a>.</td>
-</tr>
-<tr>
-<td>Cloud storage area</td>
-<td>A working Cloud Storage bucket to store data inside. To learn more, read <a href="https://cloud.google.com/storage/docs/creating-buckets"><em>Create storage buckets</em></a>.</td>
-</tr>
-<tr>
-<td>Table prefix</td>
-<td>An optional prefix to add to your destination table.</td>
-</tr>
-</tbody>
-</table>
-<p>When you are happy with your configuration, click <strong>Continue</strong>.</p>
 
               
             </article>
