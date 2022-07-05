@@ -9,7 +9,10 @@ nav:
         - 'Set up BigQuery': 'set-up-google-bigquery.md'
         - 'Connect to BigQuery': 'connect-to-bigquery.md'
   - Pipelines:
+    - 'MongoDB': 'mongodb.md'
     - 'MySQL': 'mysql.md'
+  - Manage Functions:
+    - 'Manage SQS Configuration': 'manage-sqs-configuration.md'
   - Previews:
     - 'Test': 'test.md'
   - Resources:
