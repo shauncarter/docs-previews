@@ -23,6 +23,22 @@ nav:
           - Google Query Authentication Guide: etl/google-query-authentication-guide.md
     - Release notes:
       - 1.64: etl/164-patch-notes.md
+  - Matillion Hub:
+    - What is Matillion Hub?: matillion-hub/index.md
+  - Product 4:
+    - What is product 4?: product-four/index.md
+  - Product 5:
+    - What is product 5?: product-five/index.md
+  - Product 6:
+    - What is product 6?: product-six/index.md
+  - Product 7:
+    - What is product 7?: product-seven/index.md
+  - Product 8:
+    - What is product 8?: product-eight/index.md
+  - Product 9:
+    - What is product 9?: product-nine/index.md
+  - Product 10:
+    - What is product 10?: product-ten/index.md
 
 
 theme: 
