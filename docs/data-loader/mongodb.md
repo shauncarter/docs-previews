@@ -22,7 +22,7 @@ Click **X** in the upper-right of the UI and then click **Yes, discard** to clos
 
 Configure the MongoDB database connection settings, specifying the following:
 
-| Property | Description |
+|Property|Description|
 |---|---|
 |Connection URL|The server IP or DNS address of your MongoDB server endpoint.|
 |Database|The name of your MongoDB database.|
