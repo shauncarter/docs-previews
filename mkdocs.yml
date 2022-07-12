@@ -63,12 +63,13 @@ theme:
   logo: assets/white-logo.svg
   features:
     - content.tabs.link
-    - navigation.expand 
     - navigation.instant
     - navigation.prune
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
+    - toc.follow
 
 plugins:
   - search
