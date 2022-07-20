@@ -21,6 +21,8 @@ Stylistically, the site is a work-in-progress right now. But it deploys markdown
 - Press the `N` key to navigate to the next page.
 - Press the `P` key to navigate to the previous page.
 
+These shortcuts don't work when Caps Lock is ON.
+
 ---
 
 ## Some admonitions
