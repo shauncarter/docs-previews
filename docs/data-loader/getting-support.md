@@ -10,7 +10,7 @@ Whether you are getting started with Matillion Data Loader, need technical adv
 
 **Sometimes the in-client or documented Help isn't enough to solve the challenges our customers face, and the best way for users to get further assistance is to either raise a ticket at our support portal or email our support team directly.**
 
-* Visit our support portal at [support.matillion.com](https://support.matillion.com){:target="_blank"}, from here you can:
+* Visit our support portal at [support.matillion.com](https://support.matillion.com), from here you can:
 * Create an account.
 * Raise a Support Ticket - every page on our support site has the **Raise A Support Ticket** button.
 * Post a public question.

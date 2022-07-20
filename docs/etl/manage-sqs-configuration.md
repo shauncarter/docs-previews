@@ -1,6 +1,6 @@
 ## Overview
 
-When using Matillion ETL as part of a larger process, the best way to initiate an orchestration job is to use [Amazon Simple Queue Service](https://aws.amazon.com/sqs/){:target="_blank"} (SQS). Other applications can read messages posted to an SQS queue and perform further processing.
+When using Matillion ETL as part of a larger process, the best way to initiate an orchestration job is to use [Amazon Simple Queue Service](https://aws.amazon.com/sqs/) (SQS). Other applications can read messages posted to an SQS queue and perform further processing.
 
 You can put messages onto an SQS queue using [Python](#send-messages-using-python) or the [SQS Message component](#send-messages-using-the-sqs-message-component).
 
@@ -8,7 +8,7 @@ You can put messages onto an SQS queue using [Python](#send-messages-using-pytho
 
 ## Setting up
 
-1. To configure SQS for Matillion ETL, first create up to three SQS queues as described in [_Getting started with Amazon SQS_](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-getting-started.html#step-create-queue){:target="_blank"}.
+1. To configure SQS for Matillion ETL, first create up to three SQS queues as described in [_Getting started with Amazon SQS_](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-getting-started.html#step-create-queue).
 
 2. In Matillion ETL, click **Project** → **Manage SQS Configuration**.
 
@@ -22,10 +22,10 @@ You can put messages onto an SQS queue using [Python](#send-messages-using-pytho
 |Listen Queue| The name of the queue to listen for messages. These messages are in a set format as shown [below](#message-format).|
 |Enable Success| Select this if you wish to place a message on an SQS queue when your orchestration job has completed.|
 |Success Queue| The name of the success queue on which to place success messages.|
-|Compress| When selected, the body of the message on the queue will be gzipped. Use this to avoid hitting [SQS limits](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/CreatingQueue.html){:target="_blank"}.|
+|Compress| When selected, the body of the message on the queue will be gzipped. Use this to avoid hitting [SQS limits](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/CreatingQueue.html).|
 |Enable Failure| Select this if you wish to place a message on an SQS queue when your orchestration job has failed.|
 |Failure Queue| The name of the failure queue on which to place failure messages.|
-|Compress| When selected, the body of the message on the queue will be gzipped. Use this to avoid hitting [SQS limits](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/CreatingQueue.html){:target="_blank"}.|
+|Compress| When selected, the body of the message on the queue will be gzipped. Use this to avoid hitting [SQS limits](http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/CreatingQueue.html).|
 
 > #### Note
 > The queues for success and failure can't be FIFO queues, as there is no property set for the message ID and message de-duplication ID.
@@ -135,7 +135,7 @@ queue.write(message)
 
 ## Send messages using the SQS Message component
 
-You can use the [SQS Message](/docs/2140977){:target="_blank"} component in an orchestration job to post a message to an SQS queue. You specify the message properties (such as **Queue Name** and **Region**) when you configure the component as part of a job. The message to be passed to the queue is written in plain text in the component's **Message** property. The message text can contain [variables](/docs/2037630){:target="_blank"} to be resolved at runtime, in the same way that other Matillion ETL components can use variables. The receiving queue must already exist so that you can select it when configuring the component.
+You can use the [SQS Message](/docs/2140977) component in an orchestration job to post a message to an SQS queue. You specify the message properties (such as **Queue Name** and **Region**) when you configure the component as part of a job. The message to be passed to the queue is written in plain text in the component's **Message** property. The message text can contain [variables](/docs/2037630) to be resolved at runtime, in the same way that other Matillion ETL components can use variables. The receiving queue must already exist so that you can select it when configuring the component.
 
 The following example shows the SQS Message component configured to send a message with the text "This is a plain test message being sent to SQS":
 
@@ -164,4 +164,4 @@ Messages are in a set format as follows.
 }
 ```
 
-The `variables` and `gridVariables` fields are optional. Variables are passed to the orchestration job. Matching variable names must be declared in the project with default values set for each environment. If a variable is passed which isn't defined in the project, an error is logged in **Project** → **Task History**. Read the articles on [_Variables_](/docs/2037630){:target="_blank"} for more information.
+The `variables` and `gridVariables` fields are optional. Variables are passed to the orchestration job. Matching variable names must be declared in the project with default values set for each environment. If a variable is passed which isn't defined in the project, an error is logged in **Project** → **Task History**. Read the articles on [_Variables_](/docs/2037630) for more information.

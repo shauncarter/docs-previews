@@ -879,13 +879,13 @@
   <h1>Manage SQS Configuration</h1>
 
 <h2 id="overview">Overview</h2>
-<p>When using Matillion ETL as part of a larger process, the best way to initiate an orchestration job is to use <a href="https://aws.amazon.com/sqs/">Amazon Simple Queue Service</a>{:target="_blank"} (SQS). Other applications can read messages posted to an SQS queue and perform further processing.</p>
+<p>When using Matillion ETL as part of a larger process, the best way to initiate an orchestration job is to use <a href="https://aws.amazon.com/sqs/">Amazon Simple Queue Service</a> (SQS). Other applications can read messages posted to an SQS queue and perform further processing.</p>
 <p>You can put messages onto an SQS queue using <a href="#send-messages-using-python">Python</a> or the <a href="#send-messages-using-the-sqs-message-component">SQS Message component</a>.</p>
 <hr />
 <h2 id="setting-up">Setting up</h2>
 <ol>
 <li>
-<p>To configure SQS for Matillion ETL, first create up to three SQS queues as described in <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-getting-started.html#step-create-queue"><em>Getting started with Amazon SQS</em></a>{:target="_blank"}.</p>
+<p>To configure SQS for Matillion ETL, first create up to three SQS queues as described in <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-getting-started.html#step-create-queue"><em>Getting started with Amazon SQS</em></a>.</p>
 </li>
 <li>
 <p>In Matillion ETL, click <strong>Project</strong> → <strong>Manage SQS Configuration</strong>.</p>
@@ -928,7 +928,7 @@
 </tr>
 <tr>
 <td>Compress</td>
-<td>When selected, the body of the message on the queue will be gzipped. Use this to avoid hitting <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/CreatingQueue.html">SQS limits</a>{:target="_blank"}.</td>
+<td>When selected, the body of the message on the queue will be gzipped. Use this to avoid hitting <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/CreatingQueue.html">SQS limits</a>.</td>
 </tr>
 <tr>
 <td>Enable Failure</td>
@@ -940,7 +940,7 @@
 </tr>
 <tr>
 <td>Compress</td>
-<td>When selected, the body of the message on the queue will be gzipped. Use this to avoid hitting <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/CreatingQueue.html">SQS limits</a>{:target="_blank"}.</td>
+<td>When selected, the body of the message on the queue will be gzipped. Use this to avoid hitting <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/CreatingQueue.html">SQS limits</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -1042,7 +1042,7 @@
 </code></pre></div>
 <hr />
 <h2 id="send-messages-using-the-sqs-message-component">Send messages using the SQS Message component</h2>
-<p>You can use the <a href="/docs/2140977">SQS Message</a>{:target="_blank"} component in an orchestration job to post a message to an SQS queue. You specify the message properties (such as <strong>Queue Name</strong> and <strong>Region</strong>) when you configure the component as part of a job. The message to be passed to the queue is written in plain text in the component's <strong>Message</strong> property. The message text can contain <a href="/docs/2037630">variables</a>{:target="_blank"} to be resolved at runtime, in the same way that other Matillion ETL components can use variables. The receiving queue must already exist so that you can select it when configuring the component.</p>
+<p>You can use the <a href="/docs/2140977">SQS Message</a> component in an orchestration job to post a message to an SQS queue. You specify the message properties (such as <strong>Queue Name</strong> and <strong>Region</strong>) when you configure the component as part of a job. The message to be passed to the queue is written in plain text in the component's <strong>Message</strong> property. The message text can contain <a href="/docs/2037630">variables</a> to be resolved at runtime, in the same way that other Matillion ETL components can use variables. The receiving queue must already exist so that you can select it when configuring the component.</p>
 <p>The following example shows the SQS Message component configured to send a message with the text "This is a plain test message being sent to SQS":</p>
 <p><img alt="Configure SQS Message component" src="https://matillion-docs.s3-eu-west-1.amazonaws.com/images/2144265/manage-sqs-config-02.png" /></p>
 <hr />
@@ -1063,7 +1063,7 @@
            }
 }
 </code></pre></div>
-<p>The <code>variables</code> and <code>gridVariables</code> fields are optional. Variables are passed to the orchestration job. Matching variable names must be declared in the project with default values set for each environment. If a variable is passed which isn't defined in the project, an error is logged in <strong>Project</strong> → <strong>Task History</strong>. Read the articles on <a href="/docs/2037630"><em>Variables</em></a>{:target="_blank"} for more information.</p>
+<p>The <code>variables</code> and <code>gridVariables</code> fields are optional. Variables are passed to the orchestration job. Matching variable names must be declared in the project with default values set for each environment. If a variable is passed which isn't defined in the project, an error is logged in <strong>Project</strong> → <strong>Task History</strong>. Read the articles on <a href="/docs/2037630"><em>Variables</em></a> for more information.</p>
 
               
             </article>
