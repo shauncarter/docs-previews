@@ -25,6 +25,12 @@ nav:
       - 1.64: etl/164-patch-notes.md
   - Matillion Hub:
     - What is Matillion Hub?: matillion-hub/index.md
+  - Unlimited Scalability:
+    - Overview: unlimited-scalability/index.md
+    - Get started:
+        - Create an ETL agent: unlimited-scalability/create-an-etl-agent.md
+        - AWS Fargate manual agent setup: unlimited-scalability/aws-fargate-manual-agent-setup.md
+        - Add ETL agent credentials to AWS Secrets Manager : unlimited-scalability/add-etl-agent-credentials-to-aws-secrets-manager.md
     
 
 
