@@ -8,19 +8,19 @@
       
       
       
-      <link rel="icon" href="../assets/favicon.ico">
+      <link rel="icon" href="../../assets/favicon.ico">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.7">
     
     
       
-        <title>Connect to BigQuery - Matillion Docs</title>
+        <title>Google Query Authentication Guide - Matillion Docs</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -36,9 +36,9 @@
       
     
     
-      <link rel="stylesheet" href="../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,11 +65,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#overview" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -78,11 +73,13 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Matillion Docs" class="md-header__button md-logo" aria-label="Matillion Docs" data-md-component="logo">
+    <a href="../.." title="Matillion Docs" class="md-header__button md-logo" aria-label="Matillion Docs" data-md-component="logo">
       
-  <img src="../assets/white-logo.svg" alt="logo">
+  <img src="../../assets/white-logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -98,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Connect to BigQuery
+              Google Query Authentication Guide
             
           </span>
         </div>
@@ -165,14 +162,8 @@
     
   </nav>
   
-</header>
     
-    <div class="md-container" data-md-component="container">
       
-      
-        
-          
-            
 <nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
@@ -183,7 +174,7 @@
 
 
   <li class="md-tabs__item">
-    <a href=".." class="md-tabs__link">
+    <a href="../.." class="md-tabs__link">
       Home
     </a>
   </li>
@@ -198,8 +189,8 @@
   
   
     <li class="md-tabs__item">
-      <a href="../164-patch-notes/" class="md-tabs__link">
-        Release notes
+      <a href="../../data-loader/" class="md-tabs__link">
+        Matillion Data Loader
       </a>
     </li>
   
@@ -216,8 +207,8 @@
   
   
     <li class="md-tabs__item">
-      <a href="../connect-to-snowflake/" class="md-tabs__link md-tabs__link--active">
-        Destinations
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        Matillion ETL
       </a>
     </li>
   
@@ -232,8 +223,8 @@
   
   
     <li class="md-tabs__item">
-      <a href="../mongodb/" class="md-tabs__link">
-        Pipelines
+      <a href="../../matillion-hub/" class="md-tabs__link">
+        Matillion Hub
       </a>
     </li>
   
@@ -248,40 +239,8 @@
   
   
     <li class="md-tabs__item">
-      <a href="../manage-sqs-configuration/" class="md-tabs__link">
-        Manage Functions
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../test/" class="md-tabs__link">
-        Previews
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../resources/" class="md-tabs__link">
-        Resources
+      <a href="../../unlimited-scalability/" class="md-tabs__link">
+        Unlimited Scalability
       </a>
     </li>
   
@@ -290,7 +249,13 @@
     </ul>
   </div>
 </nav>
-          
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
         
       
       <main class="md-main" data-md-component="main">
@@ -308,9 +273,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Matillion Docs" class="md-nav__button md-logo" aria-label="Matillion Docs" data-md-component="logo">
+    <a href="../.." title="Matillion Docs" class="md-nav__button md-logo" aria-label="Matillion Docs" data-md-component="logo">
       
-  <img src="../assets/white-logo.svg" alt="logo">
+  <img src="../../assets/white-logo.svg" alt="logo">
 
     </a>
     Matillion Docs
@@ -326,7 +291,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Home
       </a>
     </li>
@@ -344,20 +309,20 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
       
       
       
       
         <label class="md-nav__link" for="__nav_2">
-          Release notes
+          Matillion Data Loader
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Release notes" data-md-level="1">
+      <nav class="md-nav" aria-label="Matillion Data Loader" data-md-level="1">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
-          Release notes
+          Matillion Data Loader
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -367,9 +332,159 @@
   
   
     <li class="md-nav__item">
-      <a href="../164-patch-notes/" class="md-nav__link">
-        Matillion ETL 1.64
+      <a href="../../data-loader/" class="md-nav__link">
+        What is Matillion Data Loader?
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-loader/getting-support/" class="md-nav__link">
+        Getting support
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Batch sources
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Batch sources" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Batch sources
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-loader/mongodb/" class="md-nav__link">
+        MongoDB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-loader/mysql/" class="md-nav__link">
+        MySQL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          Destinations
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Destinations" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Destinations
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-loader/set-up-google-bigquery/" class="md-nav__link">
+        Set up Google BigQuery
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-loader/connect-to-bigquery/" class="md-nav__link">
+        Connect to Google BigQuery
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-loader/connect-to-snowflake/" class="md-nav__link">
+        Connect to Snowflake
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -400,14 +515,14 @@
       
       
         <label class="md-nav__link" for="__nav_3">
-          Destinations
+          Matillion ETL
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Destinations" data-md-level="1">
+      <nav class="md-nav" aria-label="Matillion ETL" data-md-level="1">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
-          Destinations
+          Matillion ETL
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -417,9 +532,89 @@
   
   
     <li class="md-nav__item">
-      <a href="../connect-to-snowflake/" class="md-nav__link">
-        Snowflake
+      <a href="../" class="md-nav__link">
+        What is Matillion ETL?
       </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Project Menu
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Project Menu" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Project Menu
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2_1" type="checkbox" id="__nav_3_2_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2_1">
+          Queue Messaging
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Queue Messaging" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Queue Messaging
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../switch-project/" class="md-nav__link">
+        Switch Project
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
     </li>
   
 
@@ -436,20 +631,76 @@
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" checked>
       
       
       
       
-        <label class="md-nav__link" for="__nav_3_2">
-          BigQuery
+        <label class="md-nav__link" for="__nav_3_3">
+          Orchestration
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="BigQuery" data-md-level="2">
-        <label class="md-nav__title" for="__nav_3_2">
+      <nav class="md-nav" aria-label="Orchestration" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
           <span class="md-nav__icon md-icon"></span>
-          BigQuery
+          Orchestration
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_1" type="checkbox" id="__nav_3_3_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1">
+          Connectors
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Connectors" data-md-level="3">
+        <label class="md-nav__title" for="__nav_3_3_1">
+          <span class="md-nav__icon md-icon"></span>
+          Connectors
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3_1_1" type="checkbox" id="__nav_3_3_1_1" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_3_1_1">
+          Google
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Google" data-md-level="4">
+        <label class="md-nav__title" for="__nav_3_3_1_1">
+          <span class="md-nav__icon md-icon"></span>
+          Google
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -459,8 +710,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../set-up-google-bigquery/" class="md-nav__link">
-        Set up BigQuery
+      <a href="../google-sheets-query/" class="md-nav__link">
+        Google Sheets Query
       </a>
     </li>
   
@@ -480,60 +731,71 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Connect to BigQuery
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Google Query Authentication Guide
+      </a>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_4" type="checkbox" id="__nav_3_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_4">
+          Release notes
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Connect to BigQuery
+      <nav class="md-nav" aria-label="Release notes" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_4">
+          <span class="md-nav__icon md-icon"></span>
+          Release notes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../164-patch-notes/" class="md-nav__link">
+        1.64
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connect-to-google-bigquery" class="md-nav__link">
-    Connect to Google BigQuery
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-google-bigquery" class="md-nav__link">
-    Configure Google BigQuery
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -563,20 +825,20 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
       
         <label class="md-nav__link" for="__nav_4">
-          Pipelines
+          Matillion Hub
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Pipelines" data-md-level="1">
+      <nav class="md-nav" aria-label="Matillion Hub" data-md-level="1">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
-          Pipelines
+          Matillion Hub
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -586,22 +848,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../mongodb/" class="md-nav__link">
-        MongoDB
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mysql/" class="md-nav__link">
-        MySQL
+      <a href="../../matillion-hub/" class="md-nav__link">
+        What is Matillion Hub?
       </a>
     </li>
   
@@ -625,20 +873,20 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
       
         <label class="md-nav__link" for="__nav_5">
-          Manage Functions
+          Unlimited Scalability
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" aria-label="Manage Functions" data-md-level="1">
+      <nav class="md-nav" aria-label="Unlimited Scalability" data-md-level="1">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
-          Manage Functions
+          Unlimited Scalability
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
@@ -648,8 +896,76 @@
   
   
     <li class="md-nav__item">
-      <a href="../manage-sqs-configuration/" class="md-nav__link">
-        Manage SQS Configuration
+      <a href="../../unlimited-scalability/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2" type="checkbox" id="__nav_5_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2">
+          Get started
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Get started" data-md-level="2">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Get started
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unlimited-scalability/create-an-etl-agent/" class="md-nav__link">
+        Create an ETL agent
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unlimited-scalability/aws-fargate-manual-agent-setup/" class="md-nav__link">
+        AWS Fargate manual agent setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unlimited-scalability/add-etl-agent-credentials-to-aws-secrets-manager/" class="md-nav__link">
+        Add ETL agent credentials to AWS Secrets Manager
       </a>
     </li>
   
@@ -658,95 +974,6 @@
           
         </ul>
       </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_6">
-          Previews
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Previews" data-md-level="1">
-        <label class="md-nav__title" for="__nav_6">
-          <span class="md-nav__icon md-icon"></span>
-          Previews
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../test/" class="md-nav__link">
-        Test
-      </a>
-    </li>
-  
-
-            
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
-  
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
-      
-      
-      
-      
-        <label class="md-nav__link" for="__nav_7">
-          Resources
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <nav class="md-nav" aria-label="Resources" data-md-level="1">
-        <label class="md-nav__title" for="__nav_7">
-          <span class="md-nav__icon md-icon"></span>
-          Resources
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../resources/" class="md-nav__link">
-        Resources
-      </a>
     </li>
   
 
@@ -776,42 +1003,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#connect-to-google-bigquery" class="md-nav__link">
-    Connect to Google BigQuery
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-google-bigquery" class="md-nav__link">
-    Configure Google BigQuery
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -824,82 +1015,9 @@
                 
 
 
-  <h1>Connect to BigQuery</h1>
+  <h1>Google Query Authentication Guide</h1>
 
-<h2 id="overview">Overview</h2>
-<p>Connect to Google BigQuery via Matillion Data Loader and use it as your destination for batch-loading a pipeline.</p>
-<hr />
-<h2 id="prerequisites">Prerequisites</h2>
-<p>Read <a href="/mdl/docs/set-up-google-bigquery"><em>Set up Google BigQuery</em></a> to make sure you are ready to connect to your Google BigQuery destination.</p>
-<hr />
-<h2 id="connect-to-google-bigquery">Connect to Google BigQuery</h2>
-<p>Click <strong>Add GCP credential</strong> to add a new set of credentials to connect to Google Cloud Platform (GCP).</p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GCP credential label</td>
-<td>A name for the new GCP credentials.</td>
-</tr>
-<tr>
-<td>Access key ID</td>
-<td>A JSON file with a working GCP access key. Drag the JSON file into the box, or click anywhere in the box to upload.</td>
-</tr>
-</tbody>
-</table>
-<p>Click <strong>Test and save</strong> to confirm the credentials work, save them, and return to <strong>Connect to Google BigQuery</strong>.</p>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GCP credential</td>
-<td>A working Google Cloud Platform credential.</td>
-</tr>
-<tr>
-<td>Destination label</td>
-<td>A descriptive name for the Google BigQuery destination.</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="configure-google-bigquery">Configure Google BigQuery</h2>
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Project</td>
-<td>A working Google Cloud project. To learn more, read <a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects"><em>Creating and managing projects</em></a>.</td>
-</tr>
-<tr>
-<td>Dataset</td>
-<td>Datasets are top-level containers stored within projects for organizing and controlling access to your tables and views. To learn more, <a href="https://cloud.google.com/bigquery/docs/datasets-intro"><em>Introduction to datasets</em></a>.</td>
-</tr>
-<tr>
-<td>Cloud storage area</td>
-<td>A working Cloud Storage bucket to store data inside. To learn more, read <a href="https://cloud.google.com/storage/docs/creating-buckets"><em>Create storage buckets</em></a>.</td>
-</tr>
-<tr>
-<td>Table prefix</td>
-<td>An optional prefix to add to your destination table.</td>
-</tr>
-</tbody>
-</table>
-<p>When you are happy with your configuration, click <strong>Continue</strong>.</p>
+<p>Some text.</p>
 
               
             </article>
@@ -922,7 +1040,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../set-up-google-bigquery/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Set up BigQuery" rel="prev">
+        <a href="../google-sheets-query/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Google Sheets Query" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -931,20 +1049,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Set up BigQuery
+              Google Sheets Query
             </div>
           </div>
         </a>
       
       
         
-        <a href="../mongodb/" class="md-footer__link md-footer__link--next" aria-label="Next: MongoDB" rel="next">
+        <a href="../164-patch-notes/" class="md-footer__link md-footer__link--next" aria-label="Next: 1.64" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              MongoDB
+              1.64
             </div>
           </div>
           <div class="md-footer__button md-icon">
@@ -973,12 +1091,12 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link", "navigation.expand", "navigation.instant", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.instant", "navigation.prune", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.tracking", "toc.follow"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.0238f547.min.js"></script>
+      <script src="../../assets/javascripts/bundle.0238f547.min.js"></script>
       
-        <script src="../javascripts/shortcuts.js"></script>
+        <script src="../../javascripts/shortcuts.js"></script>
       
     
   </body>
